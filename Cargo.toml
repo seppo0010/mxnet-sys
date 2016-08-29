@@ -1,0 +1,7 @@
+[package]
+name = "mxnet-sys"
+version = "0.1.0"
+authors = ["Jake Lee <jake@jakelee.net>"]
+
+[dependencies]
+libc = "^0.2.0"
