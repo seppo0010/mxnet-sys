@@ -617,6 +617,17 @@ extern "C" {
                                       out: *mut SymbolHandle)
                                       -> c_int;
 
+    pub fn MXImperativeInvokeEx(creator: AtomicSymbolCreator,
+                                num_inputs: c_int,
+                                inputs: *const NDArrayHandle,
+                                num_outputs: *mut c_int,
+                                outputs: *mut *mut NDArrayHandle,
+                                num_params: c_int,
+                                param_keys: *const *const c_char,
+                                param_vals: *const *const c_char,
+                                out_stypes: *mut *mut c_int)
+                                -> c_int;
+
     /// Create a Variable Symbol.
     ///
     /// - param: name name of the variable
